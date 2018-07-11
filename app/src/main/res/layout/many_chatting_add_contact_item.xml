@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_person"
+    android:layout_width="269dp"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/user_selector"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/color1"
+        android:textSize="@dimen/default_22" />
+
+    <ImageView
+        android:id="@+id/select_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/chatting_add_contact_item_bg" />
+
+</RelativeLayout>

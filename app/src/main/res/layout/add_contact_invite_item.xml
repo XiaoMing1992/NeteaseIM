@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="766dp"
+    android:layout_height="71dp"
+    android:background="@drawable/item_text_selector"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical">
+
+    <com.konka.konkaim.ui.CircleImageView
+        android:id="@+id/head_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="29dp"
+        android:src="@drawable/img_default" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/head_icon"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/color1"
+        android:textSize="@dimen/default_24" />
+
+    <LinearLayout
+        android:id="@+id/layout_refuse_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="36dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/refuse_add_tip_point" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="已拒绝你的请求"
+            android:textColor="@color/color12"
+            android:textSize="@dimen/default_20" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_accept_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="36dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/refuse_add_tip_point" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="已接受你的请求"
+            android:textColor="@color/color12"
+            android:textSize="@dimen/default_20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_accept_friend_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="36dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="已同意好友的请求"
+            android:textColor="@color/color12"
+            android:textSize="@dimen/default_20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_refuse_friend_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="36dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="已拒绝好友的请求"
+            android:textColor="@color/color12"
+            android:textSize="@dimen/default_20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_add_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="36dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:text="OK键同意，菜单键拒绝"
+            android:textColor="@color/color12"
+            android:textSize="@dimen/default_20" />
+    </LinearLayout>
+</RelativeLayout>

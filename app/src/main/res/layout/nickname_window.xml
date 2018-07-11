@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_nickname_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color4"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/back_nickname_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="填写昵称"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_28" />
+    </LinearLayout>
+
+    <!--    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="214dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改昵称"
+                android:textColor="@color/color1"
+                android:textSize="@dimen/default_24" />
+
+            <LinearLayout
+                android:layout_width="745dp"
+                android:layout_height="71dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_nick_name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="15"
+                    android:textColor="@color/color1"
+                    android:textSize="@dimen/default_18" />
+
+                <TextView
+                    android:id="@+id/tv_nick_name_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/15"
+                    android:textColor="@color/color4"
+                    android:textSize="@dimen/default_18" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/nick_name_error_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称不能为空"
+                android:textColor="@color/color5"
+                android:textSize="@dimen/default_24"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="202dp"
+                android:layout_height="68dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/item_button_yellow_selector"
+                android:text="保存"
+                android:textColor="@color/color1"
+                android:textSize="@dimen/default_24" />
+        </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="214dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:text="修改昵称"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_24" />
+
+        <RelativeLayout
+            android:layout_width="744dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="268dp"
+            android:layout_marginTop="20dp"
+            android:addStatesFromChildren="true"
+            android:background="@drawable/item_text_selector"
+            android:orientation="horizontal"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+
+            <EditText
+                android:id="@+id/edit_nick_name"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="@null"
+                android:hint="kk..."
+                android:maxLength="15"
+                android:singleLine="true"
+                android:textColor="@color/color1"
+                android:textColorHint="@color/text_hint"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:textSize="@dimen/default_22" />
+
+            <TextView
+                android:id="@+id/tv_nick_name_count"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_alignParentRight="true"
+                android:alpha="0.6"
+                android:gravity="center"
+                android:text="0/15"
+                android:textColor="@color/color1"
+                android:textSize="@dimen/default_24" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/nick_name_error_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="16dp"
+            android:text="* 昵称不能为空哦！"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_20"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="202dp"
+        android:layout_height="72dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="413dp"
+        android:background="@drawable/item_button_yellow_selector"
+        android:text="保存"
+        android:textColor="@color/color1"
+        android:textSize="@dimen/default_24" />
+</RelativeLayout>

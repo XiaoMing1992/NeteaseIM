@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">易聊</string>
+
+
+    <!-- 通话状态 -->
+    <string name="wait_to_connect">等待接通...</string>
+    <string name="chatting">聊天中...</string>
+    <string name="connect_fail">接通失败</string>
+    <string name="chat_over">聊天结束</string>
+    <string name="chat_fail">通话失败</string>
+
+</resources>

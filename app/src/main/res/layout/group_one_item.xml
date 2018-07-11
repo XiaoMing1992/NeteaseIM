@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.konka.konkaim.ui.CircleImageView
+        android:id="@+id/head_icon"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:src="@drawable/img_default" />
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="@color/color1"
+        android:textSize="@dimen/default_25" />
+</LinearLayout>

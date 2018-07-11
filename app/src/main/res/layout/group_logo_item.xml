@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="86dp"
+    android:layout_height="86dp"
+    android:orientation="vertical">
+
+    <com.konka.konkaim.ui.CircleImageView
+        android:id="@+id/group_logo"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:src="@drawable/img_default" />
+</LinearLayout>

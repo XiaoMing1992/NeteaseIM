@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/color3">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:text="删除群聊"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_28" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="删除后不再接收此群聊的消息，确认删除该群聊吗？"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_28" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/contact_item_bg"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/btn_cancel"
+            android:text="确定"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_20" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/contact_item_bg"
+            android:layout_marginRight="50dp"
+            android:text="取消"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_20" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color4">
+
+    <include layout="@layout/nickname_window" />
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="我的"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_28" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/person_layout"
+            android:layout_width="564dp"
+            android:layout_height="125dp"
+            android:background="@drawable/item_text_selector"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical">
+
+            <com.konka.konkaim.ui.CircleImageView
+                android:id="@+id/head_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="38dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:src="@drawable/img_default" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginLeft="29dp"
+                android:layout_toRightOf="@+id/head_icon"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="易聊用户123"
+                    android:textColor="@color/color1"
+                    android:textSize="@dimen/default_26" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/mobile_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/mobile_icon" />
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/color9"
+                        android:textSize="@dimen/default_20" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="42dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:src="@drawable/me_right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/state_layout"
+            android:layout_width="565dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/item_text_selector"
+            android:gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="38dp"
+                android:gravity="center"
+                android:text="状态"
+                android:textColor="@color/color1"
+                android:textSize="@dimen/default_24" />
+
+
+            <ImageView
+                android:id="@+id/previous"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/tv_state"
+                android:gravity="center"
+                android:src="@drawable/me_left_arrow" />
+
+            <TextView
+                android:id="@+id/tv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/next"
+                android:gravity="center"
+                android:text="可通话"
+                android:textColor="@color/color1"
+                android:textSize="@dimen/default_24" />
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="42dp"
+                android:gravity="center"
+                android:src="@drawable/me_right_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/about_layout"
+            android:layout_width="565dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="17dp"
+            android:gravity="center"
+            android:background="@drawable/item_text_selector"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:text="关于"
+                android:textColor="@color/color1"
+                android:textSize="@dimen/default_24" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="72dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:src="@drawable/me_right_arrow" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="343dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/logout_btn_item_bg"
+            android:gravity="center"
+            android:text="退出当前账号"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_24" />
+    </LinearLayout>
+</RelativeLayout>

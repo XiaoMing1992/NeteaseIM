@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_nickname"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color4"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="添加联系人"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_28" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="223dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:text="输入手机号"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_29" />
+
+        <EditText
+            android:id="@+id/edit_mobile"
+            android:layout_width="766dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="268dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/item_text_selector"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingLeft="42dp"
+            android:textColor="@color/color1"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:textSize="@dimen/default_24" />
+
+        <TextView
+            android:id="@+id/empty_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="用户不存在"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_25"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layout_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="46dp"
+                android:text="搜索结果 "
+                android:textColor="@color/color1"
+                android:textSize="@dimen/default_29" />
+
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/search_result_recyclerView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:clipChildren="false"-->
+            <!--android:clipToPadding="false"-->
+            <!--android:descendantFocusability="afterDescendants"-->
+            <!--android:scrollbars="none">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <RelativeLayout
+                android:id="@+id/search_result"
+                android:layout_width="766dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="268dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/item_text_selector"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical">
+
+                <com.konka.konkaim.ui.CircleImageView
+                    android:id="@+id/head_icon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="29dp" />
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/head_icon"
+                    android:gravity="center"
+                    android:textColor="@color/color1"
+                    android:textSize="@dimen/default_24" />
+
+                <TextView
+                    android:id="@+id/add_friend_result_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="36dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="已添加"
+                    android:textColor="@color/color7"
+                    android:textSize="@dimen/default_20" />
+
+                <LinearLayout
+                    android:id="@+id/layout_refuse_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="36dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/refuse_add_tip_point" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:text="已拒绝你的请求"
+                        android:textColor="@color/color12"
+                        android:textSize="@dimen/default_20" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="按“OK”键添加联系人"
+                android:textColor="@color/color11"
+                android:textSize="@dimen/default_21" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="46dp"
+                android:text="好友邀请"
+                android:textColor="@color/color1"
+                android:textSize="@dimen/default_29" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/invite_recyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="268dp"
+                android:layout_marginTop="30dp"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:descendantFocusability="afterDescendants"
+                android:scrollbars="none">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <TextView
+                android:id="@+id/layout_invite_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="18dp"
+                android:text="OK键同意，菜单键拒绝"
+                android:textColor="@color/color11"
+                android:visibility="gone"
+                android:textSize="@dimen/default_21" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

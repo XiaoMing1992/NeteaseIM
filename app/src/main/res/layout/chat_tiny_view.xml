@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="200dp"
+    android:background="@drawable/chat_tiny_view_bg">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.konka.konkaim.ui.CircleImageView
+            android:id="@+id/head_icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/divergent_aperture"
+            android:src="@drawable/middle_outer_ring" />
+
+        <TextView
+            android:id="@+id/remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="备注"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/default_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="22dp"
+        android:text="发起了语音请求"
+        android:textColor="@color/color1"
+        android:textSize="@dimen/default_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:alpha="0.8"
+        android:text="按【OK】键接听，【返回】键拒绝"
+        android:textColor="@color/color1"
+        android:textSize="@dimen/default_18" />
+</RelativeLayout>

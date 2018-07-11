@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="face_picture_marginLeft">10dp</dimen>
+    <dimen name="face_picture_marginRight">10dp</dimen>
+
+    <dimen name="contact_item_dividerHeight">55dp</dimen>
+    <dimen name="contact_item_dividerWidth">28dp</dimen>
+
+    <dimen name="group_one_item_dividerHeight">55dp</dimen>
+    <dimen name="group_one_item_dividerWidth">62dp</dimen>
+
+    <dimen name="group_logo_item_dividerHeight">55dp</dimen>
+    <dimen name="group_logo_item_dividerWidth">-15dp</dimen>
+
+    <dimen name="many_contact_item_dividerHeight">55dp</dimen>
+    <dimen name="many_contact_item_dividerWidth">28dp</dimen>
+
+    <dimen name="team_chat_contact_item_dividerHeight">55dp</dimen>
+    <dimen name="team_chat_contact_item_dividerWidth">28dp</dimen>
+
+    <dimen name="team_chat_select__contact_item_dividerHeight">55dp</dimen>
+    <dimen name="team_chat_select_contact_item_dividerWidth">32dp</dimen>
+
+    <dimen name="many_chatting_add_contact_item_dividerHeight">33dp</dimen>
+    <dimen name="many_chatting_add_contact_item_dividerWidth">33dp</dimen>
+
+    <dimen name="team_chat_receive_item_dividerHeight">55dp</dimen>
+    <dimen name="team_chat_receive_item_dividerWidth">28dp</dimen>
+
+    <dimen name="img_width">258dp</dimen>
+    <dimen name="img_height">131dp</dimen>
+
+    <dimen name="face_background_width">375dp</dimen>
+    <dimen name="face_background_height">210dp</dimen>
+    <dimen name="face_background_marginLeft">60dp</dimen>
+
+    <dimen name="face_picture_marginTop">48dp</dimen>
+    <dimen name="face_picture_marginBottom">67dp</dimen>
+
+    <dimen name="face_layout_marginLeft">60dp</dimen>
+    <dimen name="face_layout_marginRight">60dp</dimen>
+
+    <dimen name="face_layout_paddingLeft">60dp</dimen>
+    <dimen name="face_layout_paddingRight">60dp</dimen>
+
+    <dimen name="movie_empty_layout_paddingLeft">344dp</dimen>
+    <dimen name="movie_empty_layout_paddingRight">344dp</dimen>
+
+    <dimen name="movie_info_marginTop">2dp</dimen>
+
+    <dimen name="default_13">13sp</dimen>
+    <dimen name="default_14">14sp</dimen>
+    <dimen name="default_16">16sp</dimen>
+    <dimen name="default_17">17sp</dimen>
+    <dimen name="default_18">18sp</dimen>
+    <dimen name="default_19">19sp</dimen>
+    <dimen name="default_20">20sp</dimen>
+    <dimen name="default_21">21sp</dimen>
+    <dimen name="default_22">22sp</dimen>
+    <dimen name="default_24">24sp</dimen>
+    <dimen name="default_25">25sp</dimen>
+    <dimen name="default_26">26sp</dimen>
+    <dimen name="default_28">28sp</dimen>
+    <dimen name="default_29">29sp</dimen>
+    <dimen name="default_30">30sp</dimen>
+    <dimen name="default_32">32sp</dimen>
+    <dimen name="default_34">34sp</dimen>
+
+    <!-- 加载页 -->
+    <dimen name="loading_text_margin_top">10dp</dimen>
+</resources>

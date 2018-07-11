@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.konka.konkaim.ui.CircleImageView
+        android:id="@+id/head_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/img_default" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/head_icon"
+        android:text=""
+        android:textColor="@color/color3"
+        android:textSize="@dimen/default_20" />
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="已拒绝你的请求"
+        android:textColor="@color/color3"
+        android:textSize="@dimen/default_20" />
+</RelativeLayout>
